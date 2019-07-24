@@ -39,4 +39,4 @@ io.on('connection', (socket) => {
     })
 })
 
-server.listen(2347, () => console.log('Website open on http://localhost:2347'))
+server.listen(server_port, () => console.log('Website open on http://localhost:2347'))
