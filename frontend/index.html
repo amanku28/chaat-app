@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ChatApp</title>
+    <script src="jquery-3.2.1.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+    <style>
+        body {
+            margin: auto;
+            color: darkblue;
+            background-color: lightpink;
+            max-width: 800px;
+            padding: 20px;
+        }
+        
+        .box {
+            border: 2px solid red;
+            background-color: lightblue;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 10px;
+            min-height: 1%;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            ChatApp
+        </h1>
+    </div>
+    <br>
+    <div id="login-div">
+        <div>
+            <label for="text">Name:</label>
+            <input placeholder="Enter your name" type="text" id="loginbox">
+        </div>
+        <br>
+        <div>
+            <button id="loginbtn">Login</button>
+        </div>
+    </div>
+    <div id="chat-div" style="display: none">
+        <div class="form-group">
+            <label for="text">Message:</label>
+            <input placeholder="Enter your message" type="test" id="msgbox">
+        </div>
+        <br>
+        <button id="sendmsg" class=" btn btn-primary">SEND</button>
+        <ul id="msglist"></ul>
+    </div>
+</body>
+
+</html>
