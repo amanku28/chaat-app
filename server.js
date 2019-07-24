@@ -9,6 +9,8 @@ const io = socketio(server)
 
 let usersockets = {}
 
+const server_port = process.env.PORT || 2347
+
 app.use('/', express.static(path.join(__dirname, 'frontend')))
 
 io.on('connection', (socket) => {
